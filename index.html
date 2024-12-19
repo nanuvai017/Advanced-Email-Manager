@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Email Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">Dark Limon x9</h1>
+            <nav class="nav">
+                <a href="#create-email">Create Email</a>
+                <a href="#inbox">Inbox</a>
+                <a href="#dashboard">Dashboard</a>
+                <a href="#settings">Settings</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- User Authentication Section -->
+        <section id="auth" class="section">
+            <div class="container">
+                <h2>User Authentication</h2>
+                <form id="authForm" class="form">
+                    <input type="text" id="usernameAuth" placeholder="Enter Username" required>
+                    <input type="password" id="passwordAuth" placeholder="Enter Password" required>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+                <div id="authResponse"></div>
+            </div>
+        </section>
+
+        <!-- Create Email Section -->
+        <section id="create-email" class="section">
+            <div class="container">
+                <h2>Create a Gmail Account</h2>
+                <form id="gmailForm" class="form">
+                    <input type="text" id="username" placeholder="Enter Username" required>
+                    <input type="text" id="domain" value="dpptd.com" readonly>
+                    <button type="submit" class="btn">Create Gmail</button>
+                </form>
+                <div id="response"></div>
+            </div>
+        </section>
+
+        <!-- Inbox Management Section -->
+        <section id="inbox" class="section">
+            <div class="container">
+                <h2>Your Inbox</h2>
+                <div id="inbox-container"></div>
+            </div>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="section">
+            <div class="container">
+                <h2>User Dashboard</h2>
+                <p>Welcome to your dashboard! Here you can manage your emails, configure settings, and more.</p>
+            </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings" class="section">
+            <div class="container">
+                <h2>API Configuration</h2>
+                <form id="apiConfigForm" class="form">
+                    <input type="text" id="apiKey" placeholder="Enter API Key" required>
+                    <input type="text" id="domainConfig" placeholder="Enter Domain" required>
+                    <button type="submit" class="btn">Save Settings</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Dark Limon x9. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
